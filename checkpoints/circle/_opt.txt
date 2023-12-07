@@ -1,0 +1,68 @@
+----------------- Options ---------------
+               batch_size: 32                            
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: ./datasets/circle/            	[default: None]
+             dataset_mode: vec                           
+                direction: AtoB                          
+              display_env: main                          
+             display_freq: 0                             
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 gan_mode: lsgan                         
+                  gpu_ids: 0                             
+                init_gain: 0.02                          
+                init_type: normal                        
+                input_dim: 1                             
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+                 lambda_A: 10.0                          
+                 lambda_B: 10.0                          
+          lambda_identity: 0.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 286                           
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                    model: mfc_gan                       
+                 n_epochs: 100                           
+           n_epochs_decay: 100                           
+               n_layers_D: 3                             
+                     name: circle                        	[default: experiment_name]
+                      ndf: 64                            
+                     netD: ffnet_9layers                 
+                     netG: ffnet_9layers                 
+                      ngf: 64                            
+               no_dropout: True                          
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+              num_threads: 4                             
+               output_dim: 2                             	[default: 3]
+                output_nc: 3                             
+                    phase:                               
+                pool_size: 50                            
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+                       r0: 0.05                          
+                       r1: 0.01                          
+                       r2: 0.05                          
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+         save_latest_freq: 5000                          
+           serial_batches: False                         
+                      sig: 0.01                          
+                   suffix:                               
+         update_html_freq: 1000                          
+                use_wandb: False                         
+                  verbose: False                         
+       wandb_project_name: CycleGAN-and-pix2pix          
+----------------- End -------------------
